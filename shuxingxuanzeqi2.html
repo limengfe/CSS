@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多值问题</title>
+    <style>
+        [title~=hello]/*title的值包括hello就显示效果*/
+        {
+            color: red;
+        }
+        [lang|=a] /*可以拆分a就显示效果*/
+    {
+        color: violet;
+    }
+  </style>
+</head>
+<body>
+    <h2 title="hello  world!">显示</h2>
+    <h3 title="hellokugou">不显示</还> <br><br><br>
+
+        <h1 lang="a-b">有效果</h1>
+        <p lang="ab">没有 </p>
+</body>
+</html>

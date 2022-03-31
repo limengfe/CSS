@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪类p</title>
+    <style>
+        p:first-child{    /*匹配第一个P元素*/
+            background-color: yellow;
+        }
+        p>i:first-child{  /*匹配所有p第一个i元素*/
+            background-color: blue;
+        }
+        p:first-child o{  /*匹配第一个p元素的所有i元素*/
+        background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <p>我是第一行</p>
+    <p>我是第二行</p>
+    <p>我是<i>蓝色</i>的。我是<i>蓝色</i>的。</p>
+    <p>我是<i>蓝色</i>的。我是<i>蓝色</i>的。</p>
+    <p>I am a <o>strong</o> man. I am a <o>strong</o> man.</p>   /*正常情况strong变色，但是因为位置原因。*/
+    <p>I am a <o>strong</o> man. I am a <o>strong</o> man.</p>
+
+</body>
+</html>

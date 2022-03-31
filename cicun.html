@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>元素高度</title>
+    <style>
+        .normal{ height: auto;}
+        .big{ height: 150px;}  /*好像是外联优先级大于内联啊*/
+        .ex{ width: 100px;
+        height: 100px;}
+        .width{ width: 200px;}  /*定义宽度*/
+</style>
+</head>
+<body>
+    <img  class="normal" src="/Users/20183/Desktop/CSS/tupian/xiaolian.png"  height="100px" width="100px"> <br>
+    <img class="big" src="/Users/20183/Desktop/CSS/tupian/xiaolian.png"  width="100px"  height="100px"><br>
+     <img class="width" src="/Users/20183/Desktop/CSS/tupian/xiaolian.png"  width="100px" height="100px">
+    <p class="ex">我的高和宽都是100px</p>
+    <p>这是段落中的一些文本。这是段落中的一些文本。
+        这是段落中的一些文本。这是段落中的一些文本。
+        这是段落中的一些文本。这是段落中的一些文本.</p>
+
+</body>
+</html>

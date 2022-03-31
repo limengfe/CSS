@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>relative相对定位</title>
+    <style>       /**针对文档流，文档位置移动了，但是之前的空间依然保留，就像hidden隐藏一样/
+        .relative1{
+            position: relative;
+            left: -30px;
+        }
+        .relative2{
+            position: relative;
+            left: 30px
+        }
+    </style>
+</head>
+<body>
+    <h4>我的标题位置正常</h4>
+    <h4 class="relative1 ">我的往左了。</h4>
+    <h4 class="relative2">我的往右了</h4>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>static静态定位</title>   
+     <style>
+         .static{                   /*文档不受任何影响*/
+             position: static;     /*通俗说就是有没有这一个步，文档都是原样*/
+             border: 3px solid green;
+         }
+     </style>
+</head>
+<body>
+    <h2>position:static </h2>
+    <p>使用position：static；定位的元素，无特殊定位，遵循正常的文档流对象</p>
+    <p class="static">我使用了position-static。</p>
+</body>
+</html>

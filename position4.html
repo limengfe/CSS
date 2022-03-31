@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sticky粘性定位</title>
+    <style>  /*定位的文档滑动到顶部，不在滑动。*/
+      .sti{
+          position: -webkit-sticky;
+          position: sticky;
+          top: 0px;
+          padding: 10px; /*文本与边框的间距*/
+          background-color: greenyellow;
+          border: green solid 2px;
+          
+      }
+    </style>
+</head>
+<body>
+    <p>尝试滚动页面</p>
+    <p>让你滚就滚啊</p>
+    <div class="sti">我被粘性定位了。</div>
+    <div style="padding-bottom:3000px;">
+        <p>请滚动我</p>
+        <p>滚动我</p>
+        <p>请滚动我</p>
+        <p>滚动我</p>
+        <p>请滚动我</p>
+        <p>滚动我</p>
+    </div>
+</body>
+</html>

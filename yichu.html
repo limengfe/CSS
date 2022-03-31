@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于浏览器文本溢出问题</title>
+    <style>
+    div{
+        height: 100px;
+        width: 100px;
+        background-color: lawngreen;
+        overflow: visible;    /*默认*/
+    }
+    .auto{
+        height: 100px;
+        width: 100px;
+        background-color: lawngreen;
+        overflow: auto
+    }
+    .hidden{
+        height: 100px;
+        width: 100px;
+        background-color: lawngreen;
+        overflow: hidden;
+    }
+    .scroll{
+        height: 100px;
+        width: 100px;
+        background-color: lawngreen;
+        overflow: scroll;
+    }
+    .inherit{
+        height: 100px;
+        width: 100px;
+        background-color: lawngreen;
+        overflow: inherit;
+    }
+    </style>
+</head>
+<body>
+    <p>overflow 解决溢出问题。</p>
+    <h3>默认visible</h3>
+    <div>
+        当你想更好的控制布局时你可以使用 overflow 属性。尝试修改 overflow 属性为: visible, hidden, scroll, 或 inherit 并查看效果。 默认值为 visible。
+    </div><br><br><br><br><br><br><br><br><br>
+    <h3>auto：</h3>
+    <div class="auto">
+        当你想更好的控制布局时你可以使用 overflow 属性。尝试修改 overflow 属性为: visible, hidden, scroll, 或 inherit 并查看效果。 默认值为 visible。
+    </div>
+    <h3>hidden:</h3>
+    <div class="hidden">
+        当你想更好的控制布局时你可以使用 overflow 属性。尝试修改 overflow 属性为: visible, hidden, scroll, 或 inherit 并查看效果。 默认值为 visible。
+    </div>
+    <h3>scroll:</h3>
+    <div class="scroll">
+        当你想更好的控制布局时你可以使用 overflow 属性。尝试修改 overflow 属性为: visible, hidden, scroll, 或 inherit 并查看效果。 默认值为 visible。
+    </div>
+    <h3>inherit:</h3>
+    <div class="inherit">
+        当你想更好的控制布局时你可以使用 overflow 属性。尝试修改 overflow 属性为: visible, hidden, scroll, 或 inherit 并查看效果。 默认值为 visible。
+    </div>
+    
+    
+</body>
+</html>

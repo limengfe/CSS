@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>响应式网页布局</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px;
+            background-color: #f1f1f1;
+        }
+        /*头部*/
+        .header{
+            text-align: center;
+            padding: 30px;
+            background-color:green;  
+        }
+        .header h1{
+            font-size: 50px;
+        }
+        /*导航条*/
+        .topnav {
+            overflow: hidden;
+            background-color:yellowgreen;
+        }
+        /*导航条链接*/
+        .topnav a{
+            float: left;
+            display: block;
+            background-color:yellowgreen;
+            color: gold;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        /*悬浮颜色修改*/
+        .topnav a:hover{
+            background-color: wheat;
+            color: green;
+        }
+        /*创建2列*/
+        .leftcolumn{
+           float: left;
+           width: 75%;
+        }
+        .rightcolumn{
+            float: right;
+            width: 25%;
+            background-color: #f1f1f1;
+            padding-left: 20px;
+        }
+        /*图片部分*/
+        .fakeing{
+            background-color: rgb(112, 167, 105);
+            width: 100%;
+            padding: 20px;
+        }
+        /*文章卡片效果*/
+        .card{
+            background-color: wheat;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        /*列表后面清除浮动*/
+        .row::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+       /*底部*/
+       .footer{
+           padding: 20px;
+           text-align: center;
+           background-color: wheat;
+           margin-top: 20px;
+       }
+       /* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局改为上下布局 */
+          @media screen and (max-width: 800px) {
+                  .leftcolumn, .rightcolumn {   
+                     width: 100%;
+                    padding: 0;
+                       }
+                       }
+ 
+/* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
+              @media screen and (max-width: 400px) {
+                        .topnav a {
+                        float: none;
+                         width: 100%;
+                                   }
+                     }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>我的网页</h1>
+        <p>重置浏览器大小可查看效果</p>
+    </div>
+   
+    <div class="topnav">
+        <a href="#">链接1</a>
+        <a href="#">链接2</a>
+        <a href="#">链接3</a>
+        <a href="#" style="float: right;">链接四</a>
+     </div>
+
+     <div class="row">
+         <div class="leftcolumn">
+             <div class="card">
+                 <h2>文章标题</h2>
+                 <h5>2021年8月24日</h5>
+                 <div class="fakeing" style="height: 200px;">图片</div>
+                 <p>一些文本..</p>
+                 <p>菜菜鸟学的是技术，更是梦想！</p>
+                 </div>
+                 <div class="card">
+                     <h2>文章标题</h2>
+                     <h5>2021年8月25日</h5>
+                     <div class="fakeing" style="height: 200px;">图片</div>
+                     <p>一些文本..</p>
+                     <p>菜鸟学的是技术，更是梦想！</p>
+                    </div>
+                   </div>
+
+                   <div class="rightcolumn">
+                       <div class="card">
+                           <h2>关于我</h2>
+                           <div class="fakeing" style="height: 100px;">图片</div>
+                           <p>关于我的信息..</p>
+                      </div>
+                    <div class="card">
+                       <h3>热门文章</h3>
+                       <div class="fakeing"><p>图片</p></div>
+                       <div class="fakeing"><p>图片</p></div>
+                       <div class="fakeing"><p>图片</p></div>
+                    </div>
+                    <div class="card">
+                        <h3>关注我</h3>
+                        <p>一些文本.....</p>
+                     </div>
+                   </div>
+                 </div>
+                   <div class="footer">
+                   <h2>底部区域</h2>
+                </div>
+</body>
+</html>

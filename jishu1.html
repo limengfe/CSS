@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>嵌套计数器</title>
+    <style>
+        body{
+            counter-reset: section;
+        }
+        h1{
+            counter-reset: subsection;
+        }
+        h1::before{
+            counter-increment: section;
+            content: "Section" counter(section)":";
+        }
+        h2::before{
+            counter-increment: subsection;
+            content: counter(section)"." counter(subsection)"";/**副计数器/
+        }
+    </style>
+</head>
+<body>
+    <h1>中国</h1>
+    <h2>北京</h2>
+    <h2>上海</h2>
+
+    <h1>日本</h1>
+    <h2>东京</h2>
+    <h2>火山</h2>
+
+    <h1>美国</h1>
+    <h2>华盛顿</h2>
+    <h2>金州</h2>
+</body>
+</html>

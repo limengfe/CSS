@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单</title>
+    <style>
+        input[type=text],select
+        {
+         width: 100%;
+         padding: 12px 20px;
+         margin: 8px 0;
+         display: inline-block;
+         border: 1px solid #ccc;
+         border-radius: 5px;/*圆角设置*/
+         box-sizing: border-box;
+        }
+        input[type=submit] {
+            width: 100%;
+            background-color: green;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 5px;/*圆角设置*/
+            cursor: pointer;
+        }
+        input[type=submit]:hover{
+            background-color: rgb(16, 75, 16);
+        }
+        div{
+            border-radius: 4px;
+            background-color: rgb(241, 248, 230);
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h3>使用CSS来渲染HTML的表单元素</h3>
+    <div>
+        <form action="">
+            <label for="fmane">First Name</label>
+                <input type="text" name="fristname" placeholder="Your name">
+
+                <label for="lname">Last Name</label>
+                <input type="text" name="lastname" placeholder="Your last name">
+
+                <label for="country">Country</label>
+                <select name="country" id="country">
+                    <option value="China">China</option>
+                    <option value="riben">Janpan</option>
+                    <option value="meiguo">USA</option>
+                </select>
+                <input type="submit" value="Submt">
+        </form>
+    </div>
+</body>
+</html>

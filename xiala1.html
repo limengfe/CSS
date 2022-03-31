@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>下拉菜单链接</title>
+    <style>
+        .drop{
+            background-color: rgb(69, 221, 132);
+            color: rgb(230, 240, 240);
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+         }
+         .dropdown{
+             position: relative;
+             display: inline-block;
+         }
+         .dropdown-content{
+             display: none;
+             position: absolute;
+             background-color:wheat;
+             min-width: 160px;
+             box-shadow: 0px,8px,16px,0px rgba(0,0,0,0.2);
+         }
+         .dropdown-content a{
+             color: black;
+             padding: 12px 16px;
+             text-decoration: none;
+             display: block;
+         }
+      .dropdown-content a:hover{ background-color:rgba(9, 32, 41, 0.151);}
+      .dropdown:hover .dropdown-content{
+          display: block;
+      }
+      .dropdown:hover .drop{
+          background-color:rgb(69, 221, 132);
+      }
+
+    </style>
+</head>
+<body>
+    <h2>下拉菜单</h2>
+    <p>鼠标移动到我这</p>
+    <div class="dropdown" style="float: left;">
+        <button class="drop">鼠标放着</button>
+        <div class="dropdown-content">
+            <a href="https://www.baidu.com">baidu</a>
+            <a href="https://www.qq.com">qq</a>
+            <a href="https://www.runoob.com">cainiao</a>
+        </div>
+    </div> 
+    <div class="dropdown" style="float: right;">
+        <button class="drop" >鼠标放着</button>
+        <div class="dropdown-content">
+            <a href="https://www.baidu.com">baidu</a>
+            <a href="https://www.qq.com">qq</a>
+            <a href="https://www.runoob.com">cainiao</a>
+        </div>
+    </div> 
+</body>
+</html>

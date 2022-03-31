@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>溢出问题</title>
+    <style>
+        div{
+            border: 3px solid greenyellow;
+            padding: 5px;
+         }
+        .img1{
+         float: right;
+        }
+        .clearfix{
+            overflow: auto;
+        }
+        .img2{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <p>以下实例溢出图很难看。</p>
+    <div>
+        <img class="img1" src="/Users/20183/Desktop/CSS/tupian/boluo.png" width="170px" height="170px">菜鸟教程 - 学的不仅是技术，更是梦想！！！
+    </div>
+    <p style="clear: right;" >在父元素上添加clearfix，并设置overflow：auto；可解决该问题。</p>
+    <div class="clearfix">
+        <img class="img2" src="/Users/20183/Desktop/CSS/tupian/boluo.png" width="170px" height="170px" >菜鸟教程 - 学的不仅是技术，更是梦想！！！
+    </div>
+
+</body>
+</html>

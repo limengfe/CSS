@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>箭头提示框</title>
+    <style>
+        .tooltip{
+            position: relative;
+            display: inline-block;
+            border-bottom: 2px solid greenyellow;
+        }
+        .tooltip .tooltiptext{
+            visibility: hidden;
+            width: 120px;
+            background-color: hotpink;
+            color: khaki;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 150%; /*1.设置为bottom提示文本在上面*/     
+            left: 50%;
+            margin-left: -60px;
+        }
+        .tooltip .tooltiptext::after{
+            content: "";
+            position: absolute;
+            top: 100%;          /*设置为top箭头朝下，*/
+            left: 50%;
+            margin-left: -5px;
+            border-left: 5px;    
+            border-style: solid;    /*上右下左用*/
+            border-color:/*朝下*/hotpink  transparent/*朝左*/  transparent/*朝上*/   transparent/*朝右*/;  /*颜色箭头方向*/
+        }
+        .tooltip:hover .tooltiptext{
+            visibility: visible;
+        }
+    </style>
+
+</head>
+<body  style="text-align: center;">
+    <h2>顶部提示框/底部箭头</h2>
+
+<div class="tooltip">鼠标移动到我这
+  <span class="tooltiptext">提示文本</span>
+</div>
+</body>
+</html>

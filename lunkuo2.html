@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>轮廓+盒子</title>
+    <style>
+        /*首先做一个盒子吧*/
+        div{
+          
+         margin: 5px;   
+         border: 5px solid; border-color: red;
+         padding: 5px;
+         }
+         /*做一个轮廓吧*/
+         .outline{ 
+             width: 200px;
+             outline-style: dashed;
+             outline-color: royalblue;
+             outline-width: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outline">我是一个盒子.</div>
+    <p class="outline">成功了。</p>
+</body>
+</html>

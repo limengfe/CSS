@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>头部</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+      body{
+          margin: 0;
+      }
+      /*头部样式*/
+      .header{
+          background-color: rgba(226, 226, 216, 0.911);
+          padding: 20px;
+          text-align: center;
+      }
+      /*导航条*/
+      .topnav{
+           overflow: hidden;
+           background-color: #333;
+      }
+      /*导航链接*/
+     .topnav a{
+         float: left;
+         display: block;
+         color: white;
+         text-align: center;
+         padding: 14px 16px;
+         text-decoration: none;
+     }
+     /*修改悬浮是的颜色*/
+     .topnav a:hover{
+         background-color:white;
+         color: black;
+     }
+     /*pc端一般三列*/
+     /*创建三个相等的列*/
+     .column{
+         float: left;
+         width: 33.3%;
+     }
+     /*列后清除浮动*/
+     .row::after{
+         content: "";
+         display: table;
+         clear: both;
+     }
+     /*响应式布局，小于600px时改成上下布局*/
+     @media screen  and (max-width:600px) {
+         .column{
+             width: 100%;
+         }
+     }
+     /*设置底部*/
+     .footer{
+         background-color: rgb(243, 209, 209);
+         text-align: center;
+         padding: 10px;
+     }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>我是头部</h1>
+    </div>
+    <div class="topnav">
+        <a href="#">链接1</a>
+        <a href="#">链接2</a>
+         <a href="#">链接3</a>
+    </div>
+    <div class="row">
+        <div class="column"><h2>第一列</h2>
+        <p>菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 
+            学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！</p>
+      </div>
+       <div class="column"><h2>第二列</h2>
+        <p>菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！
+           菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！</p>
+       </div>
+       <div class="column"><h2>第三列</h2>
+    <p>菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！
+        菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！</p>
+    </div>
+    </div>
+    <div class="footer">
+        <p>底部区域</p>
+    </div>
+</body>
+</html>
